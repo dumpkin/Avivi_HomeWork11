@@ -31,7 +31,7 @@ public class Triple<First, Second, Third> {
                     + "\nWhat " + param.getClass().getSimpleName() + "we had to do: " + param;
             return ret;
         } else {
-            String ret = "Class Pair\n"
+            String ret = "Class Triple\n"
                     + "first type: " + first.getClass().getSimpleName() + '=' + first
                     + "\nsecond type: " + second.getClass().getSimpleName() + '=' + second
                     + "\nthrid type: " + third.getClass().getSimpleName() + '=' + third;
