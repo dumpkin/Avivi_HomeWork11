@@ -25,7 +25,8 @@ private Two two;
 
     @Override
     public String toString() {
-       String ret= "Class Pair\n"+"first type: " + one.getClass().getSimpleName() +'='+one+"\nsecond type: " + two.getClass().getSimpleName() +'='+two;
+       String ret= "Class Pair\n"+"first type: " + one.getClass().getSimpleName() +
+               '='+one+"\nsecond type: " + two.getClass().getSimpleName() +'='+two;
         return ret;
     }
 }

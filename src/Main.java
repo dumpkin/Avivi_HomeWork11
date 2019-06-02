@@ -10,15 +10,24 @@ public class Main {
         Pair<Integer, Integer> twins = new Pair(45, 22);
         Pair<String, Boolean> twins2 = new Pair("Bla-Bla", false);
 
+        Triple <? extends Number, ? extends Number, ? extends Integer> mathematic =
+                new Triple<Number, Number, Integer>  (23, 457.4, 34, Operations.multiple);
 
-        homework_11(twins,twins2);
+        Triple <String, String, Boolean> lirics =
+                new Triple <String, String, Boolean>  ("All your bases", "are belong to us", true);
+
+        System.out.println("\n ________________Pair generics_____________\n");
+
+        homework_11(twins, twins2);
+        System.out.println("\n_______________ TripPle generics______________\n");
+        homework_11(mathematic,lirics);
 
 
     }
 
-    public static void homework_11 (Object... input){
-        for (Object object:input) {
-            System.out.println(object.toString()+"\n");
+    private static void homework_11(Object... input) {
+        for (Object object : input) {
+            System.out.println(object.toString() + "\n");
 
         }
 
